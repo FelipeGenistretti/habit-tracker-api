@@ -13,12 +13,14 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "laradumps/laradumps": "^4.3",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
+        "rector/rector": "*",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
@@ -48,6 +50,9 @@
             "@php artisan key:generate --ansi"
         ]
     },
+    "lint":"pint",
+    "rector":"rector",
+    
     "extra": {
         "laravel": {
             "dont-discover": []
